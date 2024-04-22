@@ -1,0 +1,9 @@
+{
+	"name": "adhu-adf-df",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "efce3425-0628-42bf-bf57-776dbd68b940",
+		"tenantId": "c47ed38b-a1a6-47ae-8b7f-ed3183ec0fc8"
+	}
+}
