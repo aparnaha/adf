@@ -1,0 +1,30 @@
+{
+	"name": "ds_year_output2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_web_url",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@concat('season_',item().season,'.json')",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@concat('RACES','/',string(utcNow('yyyyMMdd')))",
+					"type": "Expression"
+				},
+				"container": "output"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "",
+			"firstRowAsHeader": true,
+			"quoteChar": ""
+		},
+		"schema": []
+	}
+}
